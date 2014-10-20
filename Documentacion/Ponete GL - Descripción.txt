@@ -1,0 +1,95 @@
+﻿PONETE! 
+
+
+Descripción: 
+
+
+Sistema interno de GL orientado a ayudar a las personas de GL a crear eventos (recaudacion de dinero para cumpleaños, organizacion de comidas, etc) y a gestionarlos.
+
+
+Dicha aplicación es orientada exclusivamente a los usuarios de GL La Plata (al menos en un principio).
+
+
+Dentro de la misma se podrán crear diferentes tipos de eventos:
+- Regalo de cumpleaños
+- Comilona (Asado, patys, choripanes, etc)
+
+
+Cada evento tiene una imagen, tipo de evento, Titulo del evento (se usará el nombre del cumpleañero en el caso de ser un evento “Regalo de Cumpleaños”), un organizador, una descripción y visibilidad.
+
+
+Regalo de Cumpleaños:
+Cualquier usuario esta habilitado para crear un evento del tipo “Regalo de Cumpleaños”. Una vez elegido este tipo de evento, es necesario completar los siguientes pasos:
+1- Dentro de una lista de usuarios (todas las personas que trabajen en la locacion) se debe seleccionar a la persona que cumple años con el fin de separarla de esa lista.
+Las demas personas de esa lista formarán parte de la lista de mails que recibiran el mail automatico de aviso de este evento para colaborar (o no) con el cumpleañero.
+2- Setear el monto “estandar” de la colaboracion (opcional).
+3- Descripción (opcional)
+
+
+Una vez creado el evento, aparecerá el mismo en una lista de eventos creados.
+Accediendo al detalle del evento, se mostrará los datos del mismo, como asi tambien dos botones:
+1- Mandar mails.
+2- Registrar colaboracion
+3- Concluir evento
+ 
+Clickeando el boton “Mandar mails”, se procedera al envio de un mail a cada persona perteneciente a la lista seteada originariamente.
+
+
+Clickeando el boton “Registrar colaboracion”, mostrará la lista de personas seteadas en el evento en donde se debe seleccionar a una, y luego de la seleccion cargar el monto de la colaboracion. Luego guardar la colaboracion.
+(Si la persona ya colaboro, tambien deberia dejar de recibir mails relacionados a este evento)
+
+
+Clickeando el boton “Concluir Evento”, se procedera a cerrar el evento, informando en el titulo del Evento la palabra “Evento Concluido”.
+
+
+Dentro del evento se mostrarán los siguientes datos:
+- Monto acumulado hasta el momento
+- Lista de personas seteadas en el evento (con un símbolo “visto” al lado de cada persona que haya colaborado)
+
+
+IMPORTANTE: Una persona que accede al sistema no debe ver un evento del tipo “Regalo de Cumpleaños” en donde esa misma persona es la cumpleañera, en el caso que existiese.
+
+
+
+
+Comilona:
+Dentro de este tipo de evento se deben setear los siguientes datos:
+
+
+- Descripción del evento (Opcional)
+- Fecha
+- Asador (Opcional)
+- Comida (Asado, patys, Choripanes, Otro)
+- Encargado de Comida (Opcional)
+- Aderezo (ensalada, Otro) (Opcional)
+- Encargado de Aderezo (Opcional)
+- Bebida (Gaseosa, Cerveza, Otro) (Opcional)
+- Encargado de Bebida (Opcional)
+- Monto
+- Personas (si no se elige a nadie, se toma por defecto a todos)
+
+
+Una vez creado el evento, accediendo al mismo, podremos ver lo siguiente:
+- Listado de personas (con un “tilde” al lado de la persona que ya abono)
+- Cantidad de personas que abonaron
+- Monto recaudado
+
+
+Ademas de los valores anteriores, al igual que en el tipo de evento “Regalo de Cumpleaños”, podemos ver el boton “Registrar Participacion” y el boton “Mandar Mails” . 
+
+
+Clickeando el boton “Registrar Participacion”, mostrará la lista de personas seteadas en el evento en donde se debe seleccionar a una. Luego guardar la participacion.
+(Si la persona ya abono, tambien deberia dejar de recibir mails relacionados a este evento)
+
+
+Clickeando el boton “Mandar mails”, se procedera al envio de un mail a cada persona perteneciente a la lista seteada originariamente.
+En este caso el mail debera tener los datos del evento:
+- fecha
+- titulo del evento
+- descripcion
+- comida
+- asador
+- bebida
+
+
+En ambos tipos de eventos, SOLO el creador del evento puede acceder a modificar los datos del mismo (Boton editar dentro de cada campo, una vez que se accede al detalle del evento). Los usuarios que no fueron creadores del evento, solo podran ver los datos del mismo.
